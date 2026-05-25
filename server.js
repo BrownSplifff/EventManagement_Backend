@@ -29,7 +29,7 @@ const io = new Server(server, {
         origin: ["http://localhost:5173",
             "http://192.168.5.129:5173",
             "http://192.168.5.212:5173",
-        "https://event-management-frontend-yuww.vercel.app/"],
+        "https://event-management-frontend-yuww.vercel.app"],
         methods: ['GET', 'POST'],
         credentials: true
     }
@@ -73,7 +73,7 @@ app.use(cors({
     origin: ["http://localhost:5173",
         "http://192.168.5.129:5173",
         "http://192.168.5.212:5173",
-    "https://event-management-frontend-yuww.vercel.app/"],
+    "https://event-management-frontend-yuww.vercel.app"],
     credentials: true
 }));
 
