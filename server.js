@@ -56,6 +56,12 @@ io.on('connection', (socket) => { // real time notifications
     });
 });
 
+const fs = require("fs");
+
+if (!fs.existsSync("uploads")) {
+    fs.mkdirSync("uploads");
+}
+
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
     customSiteTitle: 'Event Management API Docs',
