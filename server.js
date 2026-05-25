@@ -72,7 +72,8 @@ app.use(helmet({
 app.use(cors({
     origin: ["http://localhost:5173",
         "http://192.168.5.129:5173",
-        "http://192.168.5.212:5173"],
+        "http://192.168.5.212:5173",
+    "https://event-management-frontend-yuww.vercel.app/"],
     credentials: true
 }));
 
